@@ -20,6 +20,8 @@ public class Idel {
     @Enumerated(EnumType.STRING)
     private Type type;
 
+    private String value;
+
     @Column(name = "range_start")
     private int rangeStart;
 
@@ -32,6 +34,7 @@ public class Idel {
 
     public enum Type {
         Age,
-        Tall
+        Tall,
+        Gender
     }
 }

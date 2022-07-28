@@ -26,7 +26,7 @@ public class Match {
     private Date createdAt;
 
     @Column(name = "is_agree")
-    private int isAgree;
+    private Boolean isAgree;
 
     @ManyToOne
     @JoinColumn(name = "from_member_id", foreignKey = @ForeignKey(name = "FK_MEMBER_TB_MATCH"))
